@@ -1,0 +1,47 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers">
+
+	<f:section name="Main">
+		<div class="modal-panel-main">
+			<div id="t3js-imagemap-container">
+				<f:image image="{image}" maxWidth="1000" maxHeight="1000" additionalAttributes="{data-original-width: image.properties.width, data-original-height: image.properties.height}" />
+			</div>
+		</div>
+		<div class="modal-panel-sidebar">
+			<div class="accordion">
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="area-head-1">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#area-collapse-1" aria-expanded="true" aria-controls="area-collapse-1">
+							<i class="fa fa-chevron-{f:if(condition:cropVariantIterator.isFirst, then:'up', else:'down')}"aria-hidden="true"></i> {f:translate(key:'LLL:EXT:sweet_imagemap/Resources/Private/Language/locallang_wizards.xlf:imagemapwizard.label.new')}
+						</button>
+					</h2>
+					<div id="area-collapse-1" class="accordion-collapse collapse show" aria-labelledby="area-head-1">
+						<div class="accordion-body">
+							<form class="form">
+								<div class="mb-3">
+									<label for="area-title-1" class="form-label">{f:translate(key:'LLL:EXT:sweet_imagemap/Resources/Private/Language/locallang_wizards.xlf:imagemapwizard.title')}</label>
+									<input type="text" class="form-control" id="area-title-1">
+								</div>
+								<div class="mb-3">
+									<label for="area-link-1" class="form-label">{f:translate(key:'LLL:EXT:sweet_imagemap/Resources/Private/Language/locallang_wizards.xlf:imagemapwizard.link')}</label>
+									<div class="input-group mb-3">
+										<input type="text" class="form-control" id="area-link-1">
+										<button class="btn btn-secondary" type="button"><i class="fa fa-link"></i></button>
+									</div>
+								</div>
+								<div class="mb-3">
+									<label for="area-bodytext-1" class="form-label">{f:translate(key:'LLL:EXT:sweet_imagemap/Resources/Private/Language/locallang_wizards.xlf:imagemapwizard.bodytext')}</label>
+									<textarea class="form-control" id="area-bodytext-1" rows="3"></textarea>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn btn-secondary t3js-aria-add" data-method="reset" title="{f:translate(key:'LLL:EXT:sweet_imagemap/Resources/Private/Language/locallang_wizards.xlf:imagemapwizard.add')}">
+				<i class="fa fa-plus"></i>
+				{f:translate(key:'LLL:EXT:sweet_imagemap/Resources/Private/Language/locallang_wizards.xlf:imagemapwizard.add')}
+			</button>
+		</div>
+
+	</f:section>
+</html>

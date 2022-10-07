@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" product-name="lang">
+		<header/>
+		<body>
+			<trans-unit id="imagemapwizard" resname="imagemapwizard">
+				<source>Imagemap</source>
+			</trans-unit>
+			<trans-unit id="imagemapwizard.label.new" resname="imagemapwizard.label.new">
+				<source>(New)</source>
+			</trans-unit>
+			<trans-unit id="imagemapwizard.add" resname="imagemapwizard.add">
+				<source>Add</source>
+			</trans-unit>
+			<trans-unit id="imagemapwizard.title" resname="imagemapwizard.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="imagemapwizard.bodytext" resname="imagemapwizard.bodytext">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="imagemapwizard.link" resname="imagemapwizard.link">
+				<source>Link</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
