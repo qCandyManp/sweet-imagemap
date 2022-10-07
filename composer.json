@@ -1,0 +1,41 @@
+{
+	"name": "qcandymanp/sweet-imagemap",
+	"type": "typo3-cms-extension",
+	"description": "A TYPO3 extension to create imagemaps.",
+	"keywords": [
+		"TYPO3",
+		"extension",
+		"content element",
+		"imagemaps"
+	],
+	"support": {
+		"source": "https://github.com/qCandyManp/sweet-imagemap",
+		"issues": "https://github.com/qCandyManp/sweet-imagemap/issues"
+	},
+	"authors": [
+		{
+			"name": "Hendrik Herpers",
+			"role": "Developer",
+			"homepage": "https://hendrikherpers.de"
+		},
+		{
+			"name": "Jakob Loewe",
+			"role": "Developer",
+			"homepage": "https://jakobloewe.de"
+		}
+	],
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"typo3/cms-core": "^10.4 || ^11"
+	},
+	"autoload": {
+		"psr-4": {
+			"Qcandymanp\\SweetImagemap\\": "Classes"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "sweet_imagemap"
+		}
+	}
+}
