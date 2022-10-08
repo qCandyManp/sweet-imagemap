@@ -165,7 +165,7 @@ class ImageMapElement extends AbstractFormElement
 
 		if ($arguments['isAllowedFileExtension']) {
 			$resultArray['requireJsModules'][] = JavaScriptModuleInstruction::forRequireJS(
-				'TYPO3/CMS/Backend/ImageManipulation'
+				'TYPO3/CMS/SweetImagemap/ImageMap'
 			)->invoke('initializeTrigger');
 			$arguments['formEngine']['field']['id'] = StringUtility::getUniqueId('formengine-image-manipulation-');
 			if (GeneralUtility::inList($config['eval'] ?? '', 'required')) {
